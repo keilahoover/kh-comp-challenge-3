@@ -4,50 +4,58 @@
   <title>Tedious Comp</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="wrapper">
-    <nav class="side-nav-bar">
-      <figure class="nav-bar-profile">
-        <img class="nav-bar" alt="ray-the-eel-man">
-        <figcaption class="nav-bar-profile__figcaption">Ray Eelman</figcaption>
+    <nav class="side-nav">
+      <figure class="side-nav-profile">
+        <img class="side-nav-profile__img" src="img/ray-turner.jpg" alt="ray-the-eel-man">
+        <figcaption class="side-nav-profile__figcaption">Ray Turner</figcaption>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
       </figure>
-      <div class="nav-bar-main">
-        <!-- house fa icon -->
-        <p>HOME</p>
-        <!-- briefcase fa icon -->
-        <p>JOBS</p>
-        <!-- resume fa icon -->
-        <p>RESUMES</p>
+      <div class="side-nav-main">
+        <p class="side-nav__p">Main</p>
+        <a href="#" class="side-nav--href"><i class="fa fa-home side-nav__i" aria-hidden="true"></i>HOME</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-briefcase side-nav__i" aria-hidden="true"></i>
+        JOBS</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-file-text-o side-nav__i" aria-hidden="true"></i>
+        RESUMES</a>
         <!-- task fa icon -->
-        <p>CALENDAR</p>
-        <!-- calendar fa icon -->
+        <a href="#" class="side-nav--href"><i class="fa fa-thumb-tack side-nav__i" aria-hidden="true"></i>
+        TASKS</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-calendar side-nav__i" aria-hidden="true"></i>
+        CALENDAR</a>
       </div>
-      <div class="nav-bar-admin">
-        <!-- users fa icon -->
-        <p>USERS</p>
-        <!-- workflow fa icon -->
-        <p>LOCATIONS</p>
-        <!-- job post fa icon -->
-        <p>JOB BOARDS</p>
-        <!-- social fa icon -->
-        <p>SOCIAL</p>
+      <div class="side-nav-admin">
+        <p class="side-nav__p">Admin</p>
+        <a href="#" class="side-nav--href"><i class="fa fa-users side-nav__i" aria-hidden="true"></i>
+        USERS</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-map-marker side-nav__i" aria-hidden="true"></i>
+        LOCATIONS</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-leaf side-nav__i" aria-hidden="true"></i>
+        LEAVES</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-clipboard side-nav__i" aria-hidden="true"></i>
+        JOB BOARDS</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-share-alt side-nav__i" aria-hidden="true"></i>
+        SOCIAL</a>
       </div>
-      <div class="nav-bar-categories">
-        <!-- yellow checkbox square iconmonstr icon -->
-        <p>Administrative</p>
-        <!-- blue square iconmonstr icon -->
-        <p>Design</p>
-        <!-- red square iconmonstr icon-->
-        <p>Executive</p>
-        <!-- green square iconmonstr icon -->
-        <p>Human Resources</p>
+      <div class="side-nav-categories">
+        <p class="side-nav__p">Categories</p>
+        <a href="#" class="side-nav--href"><i class="fa fa-square side-nav__i" aria-hidden="true"></i>
+        Administrative</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-square side-nav__i" aria-hidden="true"></i>
+        Design</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-square side-nav__i" aria-hidden="true"></i>
+        Executives</a>
+        <a href="#" class="side-nav--href"><i class="fa fa-square side-nav__i" aria-hidden="true"></i>
+        Human Resources</a>
       </div>
     </nav>
     <header class="header" role="header">
       <!-- right arrow and hamburger icon -->
       <form role="form">
-        <!-- hamburger fa icon -->
+        <i class="fa fa-bars" aria-hidden="true"></i>
         <input type="submit" class="header__field header__img" aria-label="side-bar-open">
         <!-- is there a better aria label? -->
         <!-- search fa icon -->
@@ -88,13 +96,25 @@
       </nav>
     </header>
     <section class="section-content">
-      <article class="section-content--article">
-        <p>1,498</p>
-        <h2>APPLICANTS</h2>
-        <p>2,129</p>
+      <article class="circles">
+       <div class="circle__stat one">
+        <div class="circle__per">1.498<h2 id="stat-class"> APPLICANTS</h2></div>
+        <svg class="circle__svg" style><circle cx="75" cy="75" r="60" stroke="#dbdbdb" fill="none" style="stroke-width: 5;"></circle><defs></defs><path d="M75,15 A60,60 0 1,1 26.458980337503156,110.26711513754839" stroke="#199dab" fill="none" style="stroke-width: 7;"></path></svg>
+      </div>
+           <div class="circle__stat one">
+        <div class="circle__per">2,129<h2 id="stat-class"> INTERVIEWS</h2></div>
+        <svg class="circle__svg" style><circle cx="75" cy="75" r="60" stroke="#dbdbdb" fill="none" style="stroke-width: 5;"></circle><defs></defs><path d="M75,15 A60,60 0 1,1 26.458980337503156,110.26711513754839" stroke="#199dab" fill="none" style="stroke-width: 5;"></path></svg>
+      </div>
+           <div class="circle__stat one">
+        <div class="circle__per">145<h2 id="stat-class"> FORWARDS</h2></div>
+        <svg class="circle__svg" style><circle cx="75" cy="75" r="60" stroke="#dbdbdb" fill="none" style="stroke-width: 5;"></circle><defs></defs><path d="M75,15 A60,60 0 1,1 26.458980337503156,110.26711513754839" stroke="#199dab" fill="none" style="stroke-width: 5;"></path></svg>
+      </div>
+          <!-- <p>1,498</p>
+        <h2>APPLICANTS</h2> -->
+        <!-- <p>2,129</p>
         <h2>INTERVIEWS</h2>
         <p>145</p>
-        <h2>FORWARDS</h2>
+        <h2>FORWARDS</h2> -->
         <form role="form">
           <input type="submit" value="TOTALS - Out of 1,304 views" aria-label="see-all-totals">
         </form>
@@ -111,56 +131,56 @@
       </section>
       <main class="main-content">
         <div class="job-description">
-        <h2>JOB DESCRIPTION</h2>
-        <form role="form">
-          <input type="submit" value="EDIT" aria-label="edit-description" class="main-content__field">
-        </form>
-        <h2>POSITION TITLE</h2>
-        <p>Eel Hunter</p>
-        <h2>LOCATION</h2>
-        <p>Rochestor, NY</p>
-        <h2>EMPLOYMENT TYPE</h2>
-        <p>Full-time</p>
-        <h2>EXPERIENCE</h2>
-        <p>High-level</p>
-        <h2>STATUS</h2>
-        <p>Open</p>
-        <h2>DESCRIPTION</h2>
-        <p>At froth java mug, coffee, seasonal robust french press spoon flavour to go single shot brewed mazagran ristretto. Lungo robust seasonal cup viennese iced acerbic chicory, mazagran est et, siphon dripper aged lungo cinnamon cream body. Qui aroma bar, viennese cappuccino mocha galão, eu, foam, café au lait cinnamon aromatic, sit turkish extra, sugar whipped extra, french press caramelization siphon plunger pot medium. Est, cappuccino instant that blue mountain at latte acerbic breve extraction wings froth sweet. Rich, dripper, crema extra black turkish roast iced bar in instant est skinny, blue mountain and et plunger pot black. Sweet carajillo roast eu, to go lungo extraction, plunger pot, single origin plunger pot turkish macchiato to go extra.</p>
-        <h2>HIRING LEAD</h2>
-        <figure>
-          <!-- emu image -->
-          <img class="main-content__img" alt="hiring-lead-profile">
-          <figcaption>Bertha</figcaption>
-        </figure>
-        <h2>APPROVED SALARY</h2>
-        <p>$200/EEL</p>
-      </div>
-        <aside class="aside-content">
-          <div class="social">
-            <!-- fa fb icon -->
-            <button class="social__btn facebook">Post to Facebook</button>
-            <!-- fa twitter icon -->
-            <button class="social__btn twitter">Tweet this Job</button>
-            <!-- fa linkedin -->
-            <button class="social__btn linkedin">Post to Linkedin</button>
-            <div class="add-links">
-              <!-- globe fa icon -->
-              <h3>Link to this Job</h3>
-              <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on unsuspecting person but inspect anything brought into the house.</p>
-              <input type="text" placeholder="http://loremipsum.dol/sit.ameteur.io" aria-label="add-link-to-job">
-              <input type="submit" value="Copy" aria-label="copy-link">
-              <!-- resume fa icon -->
-              <h3>Use the Button Widget</h3>
-              <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on unsuspecting person but inspect anything brought into the house.</p>
-              <input type="text" placeholder="http://loremipsum.dol/sit.ameteur.io" aria-label="add-link-to-embed">
-              <input type="submit" value="Copy" aria-label="copy-link">
-              <!-- paper plane fa icon -->
-              <h3>Upload Resumes by Email</h3>
-              <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on unsuspecting person but inspect anything brought into the house.</p>
-              <input type="text" placeholder="bertha@gmail.com">
-        </aside>
-        </main>
-      </div>
-    </body>
-    </html>
+          <h2>JOB DESCRIPTION</h2>
+          <form role="form">
+            <input type="submit" value="EDIT" aria-label="edit-description" class="main-content__field">
+          </form>
+          <h2s>POSITION TITLE</h2>
+            <p>Eel Hunter</p>
+            <h2>LOCATION</h2>
+            <p>Rochestor, NY</p>
+            <h2>EMPLOYMENT TYPE</h2>
+            <p>Full-time</p>
+            <h2>EXPERIENCE</h2>
+            <p>High-level</p>
+            <h2>STATUS</h2>
+            <p>Open</p>
+            <h2>DESCRIPTION</h2>
+            <p>At froth java mug, coffee, seasonal robust french press spoon flavour to go single shot brewed mazagran ristretto. Lungo robust seasonal cup viennese iced acerbic chicory, mazagran est et, siphon dripper aged lungo cinnamon cream body. Qui aroma bar, viennese cappuccino mocha galão, eu, foam, café au lait cinnamon aromatic, sit turkish extra, sugar whipped extra, french press caramelization siphon plunger pot medium. Est, cappuccino instant that blue mountain at latte acerbic breve extraction wings froth sweet. Rich, dripper, crema extra black turkish roast iced bar in instant est skinny, blue mountain and et plunger pot black. Sweet carajillo roast eu, to go lungo extraction, plunger pot, single origin plunger pot turkish macchiato to go extra.</p>
+            <h2>HIRING LEAD</h2>
+            <figure>
+              <!-- emu image -->
+              <img class="main-content__img" alt="hiring-lead-profile">
+              <figcaption>Bertha</figcaption>
+            </figure>
+            <h2>APPROVED SALARY</h2>
+            <p>$200/EEL</p>
+          </div>
+          <aside class="aside-content">
+            <div class="social">
+              <!-- fa fb icon -->
+              <button class="social__btn facebook">Post to Facebook</button>
+              <!-- fa twitter icon -->
+              <button class="social__btn twitter">Tweet this Job</button>
+              <!-- fa linkedin -->
+              <button class="social__btn linkedin">Post to Linkedin</button>
+              <div class="add-links">
+                <!-- globe fa icon -->
+                <h3>Link to this Job</h3>
+                <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on unsuspecting person but inspect anything brought into the house.</p>
+                <input type="text" placeholder="http://loremipsum.dol/sit.ameteur.io" aria-label="add-link-to-job">
+                <input type="submit" value="Copy" aria-label="copy-link">
+                <!-- resume fa icon -->
+                <h3>Use the Button Widget</h3>
+                <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on unsuspecting person but inspect anything brought into the house.</p>
+                <input type="text" placeholder="http://loremipsum.dol/sit.ameteur.io" aria-label="add-link-to-embed">
+                <input type="submit" value="Copy" aria-label="copy-link">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <h3>Upload Resumes by Email</h3>
+                <p>Cat fur is the new black with tail in the air or favor packaging over toy for pounce on unsuspecting person but inspect anything brought into the house.</p>
+                <input type="text" placeholder="bertha@gmail.com">
+              </aside>
+            </main>
+          </div>
+        </body>
+        </html>
