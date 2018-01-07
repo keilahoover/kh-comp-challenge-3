@@ -4,37 +4,138 @@
   border: 0;
 }
 
-body {}
+html {
+  font-size: 12px;
+}
+
+body {
+
+}
 
 .wrapper {
   display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 30% 50%;
-  background-color: magenta;
-  /*delete height later*/
-  height: 100vh;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 180px 200px 598px;;
+  background-color: #ECF2F7;
 }
 
-.nav-bar {
+.wrapper p {
+  color: #ADB8CD;
+}
+
+.wrapper h2 {
+  font-size: 1.2rem;
+}
+
+.side-nav {
   grid-column: 1/2;
   grid-row: 1/4;
-  background-color: green;
+  background-color: #343F54;
+}
+
+.side-nav-profile {
+  border-bottom: 2.5px solid #1f272f;
+  border-style: ridge;
+}
+
+.side-nav-profile__img {
+  border-radius: 50%;
+  margin: .8rem 3rem 0 3.3rem;
+  width: 40%;
+}
+
+.side-nav-profile__figcaption {
+  color: #ADB8CD;
+  padding: .8rem 0 1.5rem 3rem;
+  display: inline-flex;
+}
+
+.fa-angle-down {
+  color: #ADB8CD;
+  padding-left: .3rem;
+}
+
+.side-nav-main {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2.5px solid #1f272f;
+  border-style: ridge;
+}
+
+.side-nav__p {
+  margin: 1rem;
+}
+
+.side-nav__i {
+  margin-right: .6rem;
+}
+
+.side-nav--href {
+  text-decoration: none;
+  color: #ADB8CD;
+  margin: 0 0 1.5rem 1rem;
+}
+
+.side-nav--href:hover {
+  color: #FFFFFF;
+}
+
+.side-nav-admin {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2.5px solid #1f272f;
+  border-style: ridge;
+}
+
+.side-nav-categories {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   grid-column: 2/3;
   grid-row: 1/2;
-  background: grey;
+  background: #FFFFFF;
 }
 
 .section-content {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: blue;
+  background-color: #FFFFFF;
+}
+
+.circles {
+  align-self: center;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  stroke-linecap: round;
+}
+
+.circle__stat {
+  display: inline-block;
+  flex-basis: 75%;
+  height: 150px;
+  position: relative;
+  width: 150px;
+}
+
+.circle__per {
+  color: #828284;
+  border-radius: 20px;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 200%;
+  font-weight: 100;
+  height: 0;
+  line-height: 0;
+  position: absolute;
+  top: 42%;
+  text-align: center;
+  width: 150px;
 }
 
 main {
   grid-column: 2/3;
   grid-row: 3/4;
-  background-color: orange;
 }
