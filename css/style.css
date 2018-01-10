@@ -9,24 +9,26 @@ html {
 }
 
 body {
-
+  font-family: "Nunito", sans-serif;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: 10% 90%;
-  grid-template-rows: 180px 200px 598px;;
+  grid-template-rows: 200px 315px 598px;
   background-color: #ECF2F7;
 }
 
 .wrapper p {
-  color: #ADB8CD;
+  color: #808995;
 }
 
 .wrapper h2 {
   font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
 }
 
+/*Side Nav Bar*/
 .side-nav {
   grid-column: 1/2;
   grid-row: 1/4;
@@ -92,50 +94,223 @@ body {
   flex-direction: column;
 }
 
+/*Header section, including search bar and 2nd nav bar*/
 .header {
   grid-column: 2/3;
   grid-row: 1/2;
   background: #FFFFFF;
 }
 
+.search-bar {
+  display: flex;
+  border: 1px solid #ADB8CD
+}
+
+.header__btn {
+  border-right: solid 1px #ADB8CD;
+  padding: 1.5rem;
+}
+
+.header__btn:hover {
+  background-color: #009EFF;
+}
+
+.fa-caret-left {
+  padding-right: .18rem;
+  color: #008EF6;
+}
+
+.search-bar i {
+  font-size: 1.5rem;
+  color: #ADB8CD;
+}
+
+.header-form {
+  padding: 1.5rem 34rem 1.5rem 1.5rem;
+}
+
+.fa-search {
+  padding-right: .5rem;
+}
+
+.header-form__text {
+  padding-right: 40rem;
+  text-overflow: ellipsis;
+}
+
+.header__btn--no-border {
+  border-style: none;
+}
+
+.page-info {
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-title__h1 {
+  margin-bottom: .8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.fa-map-marker {
+  padding-right: .5rem;
+}
+
+.main-title__p--span {
+  color: #55C6F1;
+}
+
+.page-edit__btn {
+  border: solid 1px #ADB8CD;
+  border-radius: 2rem;
+  padding: .8rem;
+  color: #808995;
+}
+
+.page-edit__btn i {
+  padding: .1rem;
+  font-size: 1.2rem;
+}
+
+.fa-circle {
+  color: #74CB17;
+}
+
+.second-nav__ul {
+  display: flex;
+  padding: 2.5rem;
+}
+
+.second-nav li {
+  padding-right: 4rem;
+  font-weight: 600;
+}
+
+/*Circle and Bar Graphs*/
 .section-content {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: #FFFFFF;
-}
-
-.circles {
-  align-self: center;
-  flex-basis: 40%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+
+.circle-graphs {
+  display: flex;
   position: relative;
+  align-self: center;
   stroke-linecap: round;
+  margin-left: 4.5rem;
 }
 
-.circle__stat {
+.circle-graph__data {
   display: inline-block;
-  flex-basis: 75%;
-  height: 150px;
+  width: 180px;
   position: relative;
-  width: 150px;
 }
 
-.circle__per {
-  color: #828284;
-  border-radius: 20px;
-  font-family: "Open-Sans", sans-serif;
-  font-size: 200%;
-  font-weight: 100;
-  height: 0;
-  line-height: 0;
+.circle-graph__text {
   position: absolute;
-  top: 42%;
-  text-align: center;
-  width: 150px;
+  top: 6.5rem;
+  left: 3.5rem;
 }
 
-main {
+#circle-graph__num {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 2rem;
+  left: 1rem;
+}
+
+.circle-graphs-form {
+  position: absolute;
+  top: 14rem;
+  left: 14rem;
+}
+
+.bar-graph {
+  margin-left: 25rem
+}
+
+.bar-graph__img {
+  width: 65%;
+}
+
+.bar-graph-form {
+  padding: 2.5rem 0 0 7rem;
+}
+
+.graph-input-style {
+  padding: .8rem;
+  border: 1px solid #ADB8CD;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+/*Job Description and Social Media Inputs and Btns*/
+.main-content {
   grid-column: 2/3;
-  grid-row: 3/4;
+  grid-row: 3/4;s
+}
+
+.line-break {
+  position: relative;
+}
+
+.line-break__hr {
+  border: solid .5px #ADB8CD;
+}
+
+.line-break__btn {
+  position: absolute;
+  top: -1rem;
+  left: 50rem;
+  font-size: 1.4rem;
+  border: 1px solid #ADB8CD;
+  border-radius: 2rem;
+  padding: .3rem .5rem .3rem .5rem;
+  color: #808995;
+}
+
+.article-aside-wrap {
+  display: flex;
+  padding: 4rem 0 0 2.5rem;
+}
+
+.main-content-article {
+  width: 63%;
+  height: 505px;
+  background-color: #FFFFFF;
+  margin-right: 2.5rem;
+}
+
+.job-description__div {
+  display: flex;
+  padding: 2rem;
+}
+
+.job-description--color {
+  background-color: #6D7D97;
+  padding: 2rem;
+}
+
+.main-content__h2 {
+  padding-right: 1rem;
+}
+
+.main-content-aside {
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social__btn {
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
