@@ -15,7 +15,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 10% 90%;
-  grid-template-rows: 200px 315px 598px;
+  grid-template-rows: 200px 315px 850px;
   background-color: #ECF2F7;
 }
 
@@ -280,23 +280,42 @@ body {
 
 .main-content-article {
   width: 63%;
-  height: 505px;
+  height: 760px;
   background-color: #FFFFFF;
   margin-right: 2.5rem;
 }
 
 .job-description__div {
   display: flex;
-  padding: 2rem;
+  align-items: center;
+  padding: 2.5rem;
+  border-bottom: 1px solid #ADB8CD;
 }
 
 .job-description--color {
   background-color: #6D7D97;
-  padding: 2rem;
 }
 
 .main-content__h2 {
-  padding-right: 1rem;
+  width: 200px;
+}
+
+.main-content__btn {
+  padding: .5rem;
+  background-color: #7885AE;
+}
+
+#description-target {
+  min-width: 200px;
+}
+
+.main-content__img {
+  width: 16%;
+  border-radius: 50%;
+}
+
+.main-content__btn i {
+  padding-right: .5rem;
 }
 
 .main-content-aside {
